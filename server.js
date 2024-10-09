@@ -8,7 +8,9 @@ const PORT = 3000;
 
 app.use(bodyParser.json());
 app.use(cors());
-const connectionString = "mongodb://localhost:27017/pepe";
+// const connectionString = "mongodb://localhost:27017/pepe";
+
+const connectionString = "mongodb+srv://eternityauthority0513:VP0GaObWlf8q6EMl@cluster0.7wvze.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.connect(connectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
